@@ -13,10 +13,11 @@ const router = createRouter({
             component: () => import("../views/user/Show.vue"),
             name: "user.show",
         },
-        // {
-        //     path: '/users/feed', component: () => import('../views/user/Feed.vue'),
-        //     name: 'user.feed'
-        // },
+        {
+            path: "/users/feed",
+            component: () => import("../views/user/Feed.vue"),
+            name: "user.feed",
+        },
         {
             path: "/users/login",
             component: () => import("../views/user/Login.vue"),
